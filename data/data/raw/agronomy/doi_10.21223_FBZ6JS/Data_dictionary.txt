@@ -1,0 +1,59 @@
+Factor.Variables	Abbreviations
+Number of tubers planted	NTP
+Number of plants emerged	NPE
+Plant uniformity	Plant_Unif
+Plant growth habit	PGH
+Plant vigor	Plant_Vigor
+Flowering degree	Flower
+Senescence	SE
+Percentage plants emerged	PPE
+Number of plants harvested	NPH
+Percentage of plants harvested	PPH
+Number marketable tubers category I/plot  	NMTCI
+Number marketable tubers category II/plot 	NMTCII
+Number of non-marketable tubers/plot	NNoMTP
+Total number of tubers/plot	TNTP
+Total number of tubers/plant	TNTPL
+Number marketable tubers/plot	NMTP
+Number marketable tubers/plant	NMTPL
+Marketable tuber weight category I /plot 	MTWCI
+Marketable tuber weight category II/plot 	MTWCII
+Non-marketable tuber weight/plot	NoMTWP
+Total tuber weight/plot	TTWP
+Total tuber weight/plant	TTWPL
+Total tuber yield adjusted	TTYA
+Total tuber yield no adjusted	TTYNA
+Marketable tuber weight/plot	MTWP
+Marketable tuber weight/plant	MTWPL
+Marketable tuber yield adjusted	MTYA
+Marketable tuber yield no adjusted	MTYNA
+Number of Stolons	Num_Stolon
+Lenght of the stolon	Leng_Stolon
+Tuber Appearance	Tuber_Apper
+Tuber Uniformity 	Tub_Unif
+Tuber   Size	Tub_Size
+Average tuber weight	ATW
+Average marketable tuber weight	ATMW
+Fresh weight of tuber sample 1	FWTS1
+Fresh weight of tuber sample 2	FWTS2
+Dry weight of tuber sample 1	DWTS1
+Dry weight of tuber sample 2	DWTS2
+Dry Matter Content Sample1	DM1
+Dry Matter Content Sample2	DM2
+Average Dry Matter	AVDM
+Tuber weight in air	TWA
+Tuber weight in water	TWW
+Specific Gravity	SG
+Initial weight sample 1	IWS1
+Initial weight sample 2	IWS2
+Final weight sample 1	FWS1
+Final weight sample 2	FWS2
+Oil Content Sample1 Percentage	OCS1
+Oil Content Sample2 Percentage	OCS2
+Average Oil Content Percentage	AOCP
+Chipping color	Chip_Color
+French_Fries_Color	FFR
+Texture_French_Fries	TEXFR
+Texture_Chips	TEXCH
+Selected_Clones	SELEC
+Observations	OBS

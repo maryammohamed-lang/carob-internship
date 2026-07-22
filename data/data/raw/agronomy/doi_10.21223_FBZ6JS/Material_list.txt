@@ -1,0 +1,9 @@
+Numeration	Institutional number	Clone or variety name	Female Institutional number	Female code	Male Institutional number	Male code	Seed source1
+1.00	CIP385524.9		CIP380475.4			BULK-1 (85LB54.11)	
+2.00	CIP391391.96						
+3.00	CIP392617.54		CIP387002.11		CIP387170.9		
+4.00	CIP392657.8		CIP387341.1		CIP387170.9		
+5.00	CIP393371.58		CIP387170.16		CIP389746.2		
+6.00	CIP393385.39		CIP387231.7		CIP387170.9		
+7.00	Dutch						
+8.00	CIP381381.13		CIP378493.915			PRECOZ BULK	

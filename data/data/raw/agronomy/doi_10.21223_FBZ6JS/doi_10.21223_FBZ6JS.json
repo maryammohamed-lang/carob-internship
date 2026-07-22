@@ -1,0 +1,952 @@
+{
+  "status": ["OK"],
+  "data": {
+    "id": [8990],
+    "identifier": ["FBZ6JS"],
+    "persistentUrl": ["https://doi.org/10.21223/FBZ6JS"],
+    "protocol": ["doi"],
+    "authority": ["10.21223"],
+    "publisher": ["International Potato Center"],
+    "publicationDate": ["2023-09-26"],
+    "storageIdentifier": ["file://10.21223/FBZ6JS"],
+    "latestVersion": {
+      "id": [2553],
+      "datasetId": [8990],
+      "datasetPersistentId": ["doi:10.21223/FBZ6JS"],
+      "storageIdentifier": ["file://10.21223/FBZ6JS"],
+      "versionNumber": [2],
+      "versionMinorNumber": [1],
+      "versionState": ["RELEASED"],
+      "lastUpdateTime": ["2024-12-04T19:57:39Z"],
+      "releaseTime": ["2024-12-04T19:57:39Z"],
+      "createTime": ["2024-12-04T18:41:40Z"],
+      "publicationDate": ["2023-09-26"],
+      "citationDate": ["2023-09-26"],
+      "termsOfUse": ["<img alt=\"Creative Commons License\" src=\"https://i.creativecommons.org/l/by/4.0/88x31.png\"><\/br>\r\n\r\nThese data and documents are licensed under a Creative Commons Attribution 4.0 International license. You may copy, distribute and transmit the data as long as you acknowledge the source through proper data citation.\r\nDisclaimer \r\nWhilst utmost care has been taken by CIP and data authors while collecting and compiling the data, the data is however offered \"as is\" with no express or implied warranty. In no event shall the data authors, CIP, or relevant funding agencies be liable for any actual, incidental or consequential damages arising from use of the data. \r\n\r\nBy using the CIP Dataverse, the user expressly acknowledges that the Data may contain some nonconformities, defects, or errors. No warranty is given that the data will meet the user's needs or expectations or that all nonconformities, defects, or errors can or will be corrected. \r\n\r\nThe user should always verify actual data; therefore the user bears all responsibility in determining whether the data is fit for the user’s intended use. The user of the data should use the related publications as a baseline for their analysis whenever possible. Doing so will be an added safeguard against misinterpretation of the data. Related publications are listed in the metadata section of the Dataverse study. \r\n"],
+      "fileAccessRequest": [false],
+      "metadataBlocks": {
+        "citation": {
+          "displayName": ["Citation Metadata"],
+          "name": ["citation"],
+          "fields": [
+            {
+              "typeName": "title",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": ["Dataset for: Potato NPT Trials Amidst Prolonged Rains in Kenyan Regions -October 2009"]
+            },
+            {
+              "typeName": "author",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Bonierbale, Merideth"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center - CIP"
+                  }
+                },
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Gastelo, Manuel"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center - CIP"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "datasetContact",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "datasetContactName": {
+                    "typeName": "datasetContactName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Gastelo, Manuel"
+                  },
+                  "datasetContactAffiliation": {
+                    "typeName": "datasetContactAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center - CIP"
+                  },
+                  "datasetContactEmail": {
+                    "typeName": "datasetContactEmail",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "mgastelo_b@hotmail.com"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "dsDescription",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "dsDescriptionValue": {
+                    "typeName": "dsDescriptionValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "The Potato NPT Trials Amidst Prolonged Rains in Kenyan Regions took place in  October of 2009 in various locations including Kibirichia, Kisima, Molo, Naraok, Oljoro, Tigoni, Baraka, and Limuru. The study was conducted under a randomized complete block design (RCBD) with eight potato clones and four replications, aiming to assess the performance of these clones in challenging weather conditions characterized by extended periods of rainfall."
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "subject",
+              "multiple": true,
+              "typeClass": "controlledVocabulary",
+              "value": ["Agricultural Sciences"]
+            },
+            {
+              "typeName": "keyword",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "keywordValue": {
+                    "typeName": "keywordValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Potatoes"
+                  },
+                  "keywordVocabulary": {
+                    "typeName": "keywordVocabulary",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "AGROVOC"
+                  },
+                  "keywordVocabularyURI": {
+                    "typeName": "keywordVocabularyURI",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "http://aims.fao.org/aos/agrovoc/c_13551"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "publication",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "publicationCitation": {
+                    "typeName": "publicationCitation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "--"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "language",
+              "multiple": true,
+              "typeClass": "controlledVocabulary",
+              "value": ["English"]
+            },
+            {
+              "typeName": "producer",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "producerName": {
+                    "typeName": "producerName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center"
+                  },
+                  "producerAbbreviation": {
+                    "typeName": "producerAbbreviation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "CIP"
+                  },
+                  "producerURL": {
+                    "typeName": "producerURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "http://cipotato.org/"
+                  },
+                  "producerLogoURL": {
+                    "typeName": "producerLogoURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "https://cipotato.org/site/logo/images/CIP_Logo_12cm_RGB.jpg"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "contributor",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "contributorType": {
+                    "typeName": "contributorType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Data Manager"
+                  },
+                  "contributorName": {
+                    "typeName": "contributorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center"
+                  }
+                },
+                {
+                  "contributorType": {
+                    "typeName": "contributorType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Funder"
+                  },
+                  "contributorName": {
+                    "typeName": "contributorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "CGIAR Research Program on Roots, Tubers and Bananas (RTB)"
+                  }
+                },
+                {
+                  "contributorType": {
+                    "typeName": "contributorType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Funder"
+                  },
+                  "contributorName": {
+                    "typeName": "contributorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "United States Agency for International Development (USAID)"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "distributor",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "distributorName": {
+                    "typeName": "distributorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "International Potato Center"
+                  },
+                  "distributorAbbreviation": {
+                    "typeName": "distributorAbbreviation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "CIP"
+                  },
+                  "distributorURL": {
+                    "typeName": "distributorURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "http://cipotato.org/"
+                  },
+                  "distributorLogoURL": {
+                    "typeName": "distributorLogoURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "https://cipotato.org/site/logo/images/CIP_Logo_12cm_RGB.jpg"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "depositor",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": ["Admin, Dataverse"]
+            },
+            {
+              "typeName": "dateOfDeposit",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": ["2023-09-26"]
+            },
+            {
+              "typeName": "timePeriodCovered",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "timePeriodCoveredStart": {
+                    "typeName": "timePeriodCoveredStart",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "2009-04"
+                  },
+                  "timePeriodCoveredEnd": {
+                    "typeName": "timePeriodCoveredEnd",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "2010-10"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "geospatial": {
+          "displayName": ["Geospatial Metadata"],
+          "name": ["geospatial"],
+          "fields": [
+            {
+              "typeName": "geographicCoverage",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Eastern - Meru"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Kibirichia"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Eastern - Meru"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Kisima"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Rift Valley - Nakuru"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Molo"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Rift Valley - Narok"
+                  },
+                  "otherGeographicCoverage": {}
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Rift Valley - Laikipia"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Oljoro Orok"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Central - Kiambu"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Tigoni"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Nyanza - Kiambu"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Baraka"
+                  }
+                },
+                {
+                  "country": {
+                    "typeName": "country",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "Kenya"
+                  },
+                  "city": {
+                    "typeName": "city",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Central - Kiambu"
+                  },
+                  "otherGeographicCoverage": {
+                    "typeName": "otherGeographicCoverage",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Limuru"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "geographicBoundingBox",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "37.5166"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "0.1"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "37.4"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "0.1166"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "35.7333"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "-0.2500"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "35.8666"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "-1.0833"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "36.3666"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "0.0666"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "36.6666"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "-1.1500"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "35.0333"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "-0.2"
+                  }
+                },
+                {
+                  "eastLongitude": {
+                    "typeName": "eastLongitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "36.7333"
+                  },
+                  "northLatitude": {
+                    "typeName": "northLatitude",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "-1.1333"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "journal": {
+          "displayName": ["Journal Metadata"],
+          "name": ["journal"],
+          "fields": []
+        }
+      },
+      "files": [
+        {
+          "label": "01_Fieldbook_Baraka200910.txt",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Data"],
+          "dataFile": {
+            "id": 9001,
+            "persistentId": "doi:10.21223/FBZ6JS/GVQHXQ",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/GVQHXQ",
+            "filename": "01_Fieldbook_Baraka200910.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 1675,
+            "categories": ["Data"],
+            "storageIdentifier": "file://18ad1bfe697-e466b9ebd755",
+            "rootDataFileId": -1,
+            "md5": "016481deba53572c2b765c090112ab50",
+            "checksum": {
+              "type": "MD5",
+              "value": "016481deba53572c2b765c090112ab50"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "02_Fieldbook_Kibiricha200910.txt",
+          "restricted": false,
+          "version": 2,
+          "datasetVersionId": 2553,
+          "categories": ["Data"],
+          "dataFile": {
+            "id": 8996,
+            "persistentId": "doi:10.21223/FBZ6JS/EDSZXD",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/EDSZXD",
+            "filename": "02_Fieldbook_Kibiricha200910.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 2674,
+            "categories": ["Data"],
+            "storageIdentifier": "file://18ad1bfe757-bdf2bf276095",
+            "rootDataFileId": -1,
+            "md5": "2b9223ed084a32b0431f640787317f42",
+            "checksum": {
+              "type": "MD5",
+              "value": "2b9223ed084a32b0431f640787317f42"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "03_Fieldbook_Kisima200910.txt",
+          "restricted": false,
+          "version": 2,
+          "datasetVersionId": 2553,
+          "categories": ["Data"],
+          "dataFile": {
+            "id": 9011,
+            "persistentId": "doi:10.21223/FBZ6JS/T52SV9",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/T52SV9",
+            "filename": "03_Fieldbook_Kisima200910.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 2659,
+            "categories": ["Data"],
+            "storageIdentifier": "file://18ad1bfe838-0870ec0a0074",
+            "rootDataFileId": -1,
+            "md5": "e1e50d7dca71f2022455d09304c186ae",
+            "checksum": {
+              "type": "MD5",
+              "value": "e1e50d7dca71f2022455d09304c186ae"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "05_Fieldbook_Limuru200910.txt",
+          "restricted": false,
+          "version": 3,
+          "datasetVersionId": 2553,
+          "categories": ["Data"],
+          "dataFile": {
+            "id": 9014,
+            "persistentId": "doi:10.21223/FBZ6JS/SN1YNT",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/SN1YNT",
+            "filename": "05_Fieldbook_Limuru200910.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 2505,
+            "categories": ["Data"],
+            "storageIdentifier": "file://18ad1bfe8fe-c9531055e748",
+            "rootDataFileId": -1,
+            "md5": "27b3fe32cb36cde0cdeb05e1330838e8",
+            "checksum": {
+              "type": "MD5",
+              "value": "27b3fe32cb36cde0cdeb05e1330838e8"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "06_Fieldbook_Narok200910.txt",
+          "restricted": false,
+          "version": 2,
+          "datasetVersionId": 2553,
+          "categories": ["Data"],
+          "dataFile": {
+            "id": 8992,
+            "persistentId": "doi:10.21223/FBZ6JS/LT5E0C",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/LT5E0C",
+            "filename": "06_Fieldbook_Narok200910.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 2651,
+            "categories": ["Data"],
+            "storageIdentifier": "file://18ad1bfe9c4-e5a623d7a31b",
+            "rootDataFileId": -1,
+            "md5": "a3da4a2b71a4063695f1b27de8535911",
+            "checksum": {
+              "type": "MD5",
+              "value": "a3da4a2b71a4063695f1b27de8535911"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "Data_dictionary.txt",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 9007,
+            "persistentId": "doi:10.21223/FBZ6JS/LDQ04G",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/LDQ04G",
+            "filename": "Data_dictionary.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 1910,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bfea9e-101857225f27",
+            "rootDataFileId": -1,
+            "md5": "9c948766c037a5ca380bb96ac1a07e31",
+            "checksum": {
+              "type": "MD5",
+              "value": "9c948766c037a5ca380bb96ac1a07e31"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "Material_list.txt",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 9009,
+            "persistentId": "doi:10.21223/FBZ6JS/KCNFSM",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/KCNFSM",
+            "filename": "Material_list.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 478,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bfeb64-9595b890b8cb",
+            "rootDataFileId": -1,
+            "md5": "9fb252e978c2ed866fe80487aa8a7d1e",
+            "checksum": {
+              "type": "MD5",
+              "value": "9fb252e978c2ed866fe80487aa8a7d1e"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "PTYL200910_BARAKA.xls",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 9005,
+            "persistentId": "doi:10.21223/FBZ6JS/NWH4FA",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/NWH4FA",
+            "filename": "PTYL200910_BARAKA.xls",
+            "contentType": "application/vnd.ms-excel",
+            "friendlyType": "MS Excel Spreadsheet",
+            "filesize": 46592,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bff685-42051bdab046",
+            "rootDataFileId": -1,
+            "md5": "6bc4714de37f1a18b7c2ce425e88bdeb",
+            "checksum": {
+              "type": "MD5",
+              "value": "6bc4714de37f1a18b7c2ce425e88bdeb"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "PTYL200910_KIBRCH.xls",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 9012,
+            "persistentId": "doi:10.21223/FBZ6JS/LJEMXO",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/LJEMXO",
+            "filename": "PTYL200910_KIBRCH.xls",
+            "contentType": "application/vnd.ms-excel",
+            "friendlyType": "MS Excel Spreadsheet",
+            "filesize": 94208,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bff7e4-7581ac4615dd",
+            "rootDataFileId": -1,
+            "md5": "bd56c1dbacaf52ebb827198e283a30d4",
+            "checksum": {
+              "type": "MD5",
+              "value": "bd56c1dbacaf52ebb827198e283a30d4"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "PTYL200910_KISIMA.xls",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 8999,
+            "persistentId": "doi:10.21223/FBZ6JS/PULA2W",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/PULA2W",
+            "filename": "PTYL200910_KISIMA.xls",
+            "contentType": "application/vnd.ms-excel",
+            "friendlyType": "MS Excel Spreadsheet",
+            "filesize": 117760,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bff941-0cc9a21b5126",
+            "rootDataFileId": -1,
+            "md5": "b6e8941fb064fbdb1059ec147e92c9ff",
+            "checksum": {
+              "type": "MD5",
+              "value": "b6e8941fb064fbdb1059ec147e92c9ff"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "PTYL200910_LIMURU.xls",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 9000,
+            "persistentId": "doi:10.21223/FBZ6JS/37JMCW",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/37JMCW",
+            "filename": "PTYL200910_LIMURU.xls",
+            "contentType": "application/vnd.ms-excel",
+            "friendlyType": "MS Excel Spreadsheet",
+            "filesize": 94720,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bffcfc-146a8a69cb8e",
+            "rootDataFileId": -1,
+            "md5": "38609fd606323fd0e382db4cb3f6bdeb",
+            "checksum": {
+              "type": "MD5",
+              "value": "38609fd606323fd0e382db4cb3f6bdeb"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        },
+        {
+          "label": "PTYL200910_NAROK.xls",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 2553,
+          "categories": ["Documentation"],
+          "dataFile": {
+            "id": 8998,
+            "persistentId": "doi:10.21223/FBZ6JS/EZ86QL",
+            "pidURL": "https://doi.org/10.21223/FBZ6JS/EZ86QL",
+            "filename": "PTYL200910_NAROK.xls",
+            "contentType": "application/vnd.ms-excel",
+            "friendlyType": "MS Excel Spreadsheet",
+            "filesize": 95232,
+            "categories": ["Documentation"],
+            "storageIdentifier": "file://18ad1bffee1-15e8a0f46706",
+            "rootDataFileId": -1,
+            "md5": "a39a874e3b6199ab9c26a4d27c6e4aa0",
+            "checksum": {
+              "type": "MD5",
+              "value": "a39a874e3b6199ab9c26a4d27c6e4aa0"
+            },
+            "tabularData": false,
+            "creationDate": "2023-09-26",
+            "publicationDate": "2023-09-26",
+            "fileAccessRequest": false
+          }
+        }
+      ]
+    }
+  }
+}
