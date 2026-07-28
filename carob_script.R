@@ -47,15 +47,16 @@ carob_script <- function(path){
       minimal$Value[minimal$Factor == "Elevation"]
     )
     
-    
     tmp <- data.frame(
+      
       trial_id = "PTYL200910",
+      plot_id = as.character(r$PLOT),
       crop = "potato",
       variety = as.character(r$INSTN),
       rep = as.integer(r$REP),
       
-      # MTWP is kg/plot, convert to kg/ha
-      yield = as.numeric(r$MTWP) / 10.8 * 10000,
+      # Marketable tuber weight (kg/plot) converted to kg/ha
+      yield_marketable = as.numeric(r$MTWP) / 10.8 * 10000,
       yield_part = "tubers",
       
       country = country,
@@ -86,7 +87,6 @@ carob_script <- function(path){
     d <- rbind(d, tmp)
   }
   
-  
   meta <- carobiner::get_metadata(
     uri = uri,
     path = path,
@@ -97,7 +97,7 @@ carob_script <- function(path){
     publication = NA,
     project = NA,
     data_type = "experiment",
-    response_vars = "yield",
+    response_vars = "yield_marketable",
     treatment_vars = "variety",
     carob_contributor = "Maryam",
     carob_effort = 1,
@@ -105,7 +105,6 @@ carob_script <- function(path){
     carob_date = "2026-07-21"
   )
   
-  # Fix metadata warnings
   meta$crops <- NULL
   meta$countries <- NULL
   meta$version <- as.character(meta$version)
@@ -113,4 +112,48 @@ carob_script <- function(path){
   carobiner::write_files(path, meta, d)
   
   return(d)
+}
+d <- carob_script("data")
+library(readxl)
+
+crop_management <- read_excel(
+  "data/data/raw/agronomy/doi_10.21223_FBZ6JS/PTYL200910_KIBRCH.xls",
+  sheet = "Crop_management"
+)
+
+View(crop_management)
+material <- read_excel(
+  "data/data/raw/agronomy/doi_10.21223_FBZ6JS/PTYL200910_KIBRCH.xls",
+  sheet = "Material List"
+)
+
+View(material)
+installation <- readxl::read_excel(
+  "data/data/raw/agronomy/doi_10.21223_FBZ6JS/PTYL200910_KIBRCH.xls",
+  sheet = "Installation"
+)
+
+View(installation)
+library(carobiner)
+
+uri <- "doi:10.21223/FBZ6JS"
+group <- "agronomy"
+
+ff <- carobiner::get_data(uri, "data", group)
+files <- c(
+  "PTYL200910_BARAKA.xls",
+  "PTYL200910_KIBRCH.xls",
+  "PTYL200910_KISIMA.xls",
+  "PTYL200910_LIMURU.xls",
+  "PTYL200910_NAROK.xls"
+)
+
+for (f in files) {
+  r <- carobiner::read.excel(
+    ff[basename(ff) == f],
+    sheet = "Fieldbook"
+  )
+  
+  cat("\n", f, "\n")
+  print(unique(r$NTP))
 }
