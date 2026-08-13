@@ -74,7 +74,6 @@ carob_script <- function(path){
   
   d <- dat %>%
     mutate(
-      
       trial_id = paste0(
         "RVCHKV_",
         gsub("[ ,]+", "_", Site)
@@ -88,61 +87,59 @@ carob_script <- function(path){
       
       rep = as.integer(REP),
       
-      # Total tuber yield
-      # TTYNA / TTYA are t/ha
+      # CAROB yield: t/ha -> kg/ha
       yield = ifelse(
-        is.na(TTYA),
-        as.numeric(TTYNA) * 1000,
-        as.numeric(TTYA) * 1000
+        is.na(TTYNA),
+        as.numeric(TTYA) * 1000,
+        as.numeric(TTYNA) * 1000
       ),
       
-      # Marketable yield
+      # Marketable yield: t/ha -> kg/ha
       yield_marketable = ifelse(
-        is.na(MTYA),
-        as.numeric(MTYNA) * 1000,
-        as.numeric(MTYA) * 1000
+        is.na(MTYNA),
+        as.numeric(MTYA) * 1000,
+        as.numeric(MTYNA) * 1000
       ),
       
       yield_part = "tubers",
       
       country = "Peru",
-      
       location = Site,
       
-      # PVS experiment conducted on farms
       on_farm = TRUE,
-      
       is_survey = FALSE,
       
       irrigated = NA,
       
       planting_date = as.Date(NA),
-      
       harvest_date = as.Date(NA),
       
       latitude = NA_real_,
-      
       longitude = NA_real_,
-      
       elevation = NA_real_,
-      
       geo_from_source = FALSE,
       
       N_fertilizer = NA_real_,
-      
       P_fertilizer = NA_real_,
-      
       K_fertilizer = NA_real_,
       
       yield_isfresh = TRUE,
+      yield_moisture = NA_real_,
       
-      yield_moisture = NA_real_
+      # Original agronomic variables
+      NTP = as.numeric(NTP),
+      NNoMTP = as.numeric(NNoMTP),
+      TNTP = as.numeric(TNTP),
+      NoMTWP = as.numeric(NoMTWP),
+      TTWP = as.numeric(TTWP),
+      TTYNA = as.numeric(TTYNA),
+      MTWP = as.numeric(MTWP),
+      MTYNA = as.numeric(MTYNA),
+      ATW = as.numeric(ATW)
     )
-  
   # -----------------------------
   # Keep CAROB variables
   # -----------------------------
-  
   d <- d %>%
     select(
       trial_id,
@@ -171,6 +168,9 @@ carob_script <- function(path){
       yield_moisture
     )
   
+  d$trial_id <- as.character(d$trial_id)
+  d$plot_id <- as.character(d$plot_id)
+  d$variety <- as.character(d$variety)
   # -----------------------------
   # Metadata
   # -----------------------------
@@ -218,4 +218,3 @@ carob_script <- function(path){
   
   return(d)
 }
-
