@@ -49,25 +49,24 @@ carob_script <- function(path) {
   # Clean source variables
   # ------------------------------------------------------------
   
-  r$year <- as.character(r$year)
+  r$year <- trimws(as.character(r$year))
   r$clone <- trimws(as.character(r$clone))
   r$locality <- trimws(as.character(r$locality))
   r$population <- trimws(as.character(r$population))
   
-  # Specific gravity
-  r$sg <- as.numeric(r$sg)
+  # SG = Specific Gravity
+  r$sg <- suppressWarnings(as.numeric(r$sg))
   
-  # Keep FF and CH as character because the source contains
+  # FF and CH remain character because the source contains
   # values such as 1*, 1**, 1*** and 1.5*.
-  r$ff <- as.character(r$ff)
-  r$ch <- as.character(r$ch)
+  r$ff <- trimws(as.character(r$ff))
+  r$ch <- trimws(as.character(r$ch))
   
-  # Remove exact duplicate rows only.
-  # No measurements are averaged or otherwise changed.
+  # Remove only exact duplicate rows.
   r <- dplyr::distinct(r)
   
   # ------------------------------------------------------------
-  # Standardized Carob data
+  # Create standardized Carob data
   # ------------------------------------------------------------
   
   d <- data.frame(
@@ -90,9 +89,10 @@ carob_script <- function(path) {
     
     country = "Peru",
     
-    location = tolower(r$locality),    
-    latitude = NA_real_,
+    location = tolower(r$locality),
+    
     longitude = NA_real_,
+    latitude = NA_real_,
     
     geo_from_source = FALSE,
     
@@ -112,7 +112,7 @@ carob_script <- function(path) {
   )
   
   # ------------------------------------------------------------
-  # Preserve ALL source measurements
+  # Keep the original source measurements
   # ------------------------------------------------------------
   
   d$sg <- r$sg
@@ -124,6 +124,7 @@ carob_script <- function(path) {
   # ------------------------------------------------------------
   
   meta <- carobiner::get_metadata(
+    
     uri = uri,
     path = path,
     group = group,
@@ -136,20 +137,23 @@ carob_script <- function(path) {
     publication = NA,
     project = NA,
     
-    # Do not use "other": it is invalid in your carobiner version.
-    # We also do not claim that SG/FF/CH are yield.
     data_type = "experiment",
+    
     treatment_vars = "variety",
     
-    response_vars = "none",
+    response_vars = "sg",
     
     notes = paste(
-      "The source dataset contains SG (Specific gravity),",
-      "FF (French fries quality/color score), and",
-      "CH (Chip color score). These source variables are",
-      "retained with their original names because they are",
-      "the main measurements reported in the source dataset.",
-      "The source dataset does not contain yield."
+      "Potato processing-quality dataset.",
+      "SG is specific gravity.",
+      "FF is the French fries quality/color score.",
+      "CH is the chip color score.",
+      "SG, FF, and CH are retained from the source dataset.",
+      "FF and CH are kept as character variables because",
+      "the source contains values with asterisks.",
+      "The source dataset does not contain yield.",
+      "Missing source measurements are retained as NA.",
+      "No measurements are averaged or otherwise modified."
     ),
     
     carob_contributor = "Maryam",
@@ -157,9 +161,10 @@ carob_script <- function(path) {
     carob_completion = 80,
     carob_date = "2026-08-13"
   )
+
   
   # ------------------------------------------------------------
-  # Write Carob files
+  # Write standardized files
   # ------------------------------------------------------------
   
   carobiner::write_files(
@@ -169,8 +174,9 @@ carob_script <- function(path) {
   )
   
   # ------------------------------------------------------------
-  # Return final data
+  # Return data
   # ------------------------------------------------------------
   
   return(d)
 }
+
