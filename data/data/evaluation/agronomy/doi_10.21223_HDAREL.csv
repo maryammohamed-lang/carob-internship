@@ -1,0 +1,2 @@
+dataset_id,planting_date,harvest_date,crop,variety,N_fertilizer,P_fertilizer,K_fertilizer,irrigated,latitude,longitude,location,adm,yield
+doi_10.21223_HDAREL,1,1,1,1,0,0,0,0,0,0,1,0,0
